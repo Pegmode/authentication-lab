@@ -1,0 +1,14 @@
+1.
+The default framework is set using the DEFAULT_AUTHENTICATION_CLASSES setting.
+2.
+HTTP basic auth
+3.
+Basic auth passwords are not excrypted and the password can't be easily revoked by the user
+Token auth can be secured with encyption and can also expire
+4.
+The user makes a request to an authorization server (who is a 3rd party, google in the example)
+The authorization server then gives the user a token that only gives them limited access to resources on another server (resource server,bitbucket in the example)
+The user gets limited access to requested information and having the auth token does not result in a total security breach in case the token is stolen
+
+5.
+https://github.com/Pegmode/authentication-lab
